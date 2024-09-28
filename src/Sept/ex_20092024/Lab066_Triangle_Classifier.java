@@ -13,20 +13,24 @@ public class Lab066_Triangle_Classifier {
         // Use an if-else statement to classify the triangle.
         // side1, side2, side3 ->
 
-        Scanner sc=new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter Side 1");
-        int side1=sc.nextInt();
+        int side1 = sc.nextInt();
         System.out.println("Enter Side 2");
-        int side2=sc.nextInt();
+        int side2 = sc.nextInt();
         System.out.println("Enter Side 3");
-        int side3= sc.nextInt();
+        int side3 = sc.nextInt();
+        if (side1 >= 0 && side2 >= 0 && side3 >= 0) {
 
-        if ((side1==side2) && (side2==side3) && (side3==side1)){
-            System.out.println(" Triangle is equilateral 'all sides are equal' ");
-        } else if ((side1!=side2) && (side2!=side3) && (side3!=side1)) {
-            System.out.println(" Triangle is scalene 'no sides are equal' ");
-        } else{
-            System.out.println(" Triangle is isosceles 'exactly two sides are equal' ");
+            if ((side1 == side2) && (side2 == side3) && (side3 == side1)) {
+                System.out.println(" Triangle is equilateral 'all sides are equal' ");
+            } else if ((side1 != side2) && (side2 != side3) && (side3 != side1)) {
+                System.out.println(" Triangle is scalene 'no sides are equal' ");
+            } else {
+                System.out.println(" Triangle is isosceles 'exactly two sides are equal' ");
+            }
+        }else{
+            System.out.println("Negative side");
         }
     }
 }
