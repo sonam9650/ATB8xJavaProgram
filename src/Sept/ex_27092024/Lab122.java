@@ -12,7 +12,7 @@ public class Lab122 {
 
         System.out.println("_______________");
 
-        //while-Nothing will print bcz contion is not true
+        //while-Nothing will print bcz condition is not true
         int age1 =17;
         while(age>18){
             System.out.println("Can Vote");
